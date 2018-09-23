@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args)
+    {
+        Student stud=new Student("Mira", 110383);
+        int year=0;
+        year++;
+
+        System.out.printf("Name is : %s", stud.getStudentName());
+        System.out.println();
+        System.out.printf("Id is : %d", stud.getStudId());
+        System.out.println();
+        System.out.print("Studying year : "+year);
+    }
+}
