@@ -1,0 +1,65 @@
+public class Time {
+    int hour, minute, second;
+
+    public Time (int hr, int mnt, int scnd)
+    {
+        hour=hr;
+        minute=mnt;
+        second=scnd;
+    }
+
+    public String toIniversal() {
+        if ((hour >= 0 && hour <= 24) && (minute >= 0 && minute <= 60) && (second >= 0 && second <= 60)) {
+            if (hour < 10)
+                System.out.print("0" + hour + ":");
+            else if (hour==24)
+                System.out.print("00:");
+            else
+                System.out.print(hour + ":");
+
+            if (minute < 10)
+                System.out.print("0" + minute + ":");
+            else
+                System.out.print(minute + ":");
+
+            if (second < 10)
+                System.out.print("0" + second);
+            else
+                System.out.print(second);
+        }
+        else
+            System.out.print("Invalid input");
+        return "";
+    }
+
+
+    public String toStandard()
+    {
+        if ((hour>=0 && hour<=24) && (minute>=0 && minute<=60) && (second>=0 && second<=60))
+        {
+            if (hour<10)
+                System.out.print("0"+hour+":");
+            else if(hour>12)
+                System.out.print(hour-12+":");
+            else
+            System.out.print(hour+":");
+
+            if (minute<10)
+                System.out.print("0"+minute+":");
+            else
+            System.out.print(minute+":");
+
+            if (second<10)
+                System.out.print("0"+second);
+            else
+            System.out.print(second);
+
+            if (hour>=12 && hour<24)
+                System.out.print(" PM");
+            else
+                System.out.print(" AM");
+        }
+
+        return "";
+    }
+}
