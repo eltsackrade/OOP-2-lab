@@ -1,0 +1,8 @@
+public class Data
+{
+    private double set1;
+    private double set2;
+    private int set3;
+
+
+}
