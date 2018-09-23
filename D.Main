@@ -1,0 +1,9 @@
+public class Main {
+
+    public static void main(String[] args) {
+        Time t=new Time(11, 10, 9);
+        System.out.println(t.toIniversal());
+        System.out.print(t.toStandard());
+	// write your code here
+    }
+}
